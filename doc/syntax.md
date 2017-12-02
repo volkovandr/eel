@@ -16,7 +16,7 @@ The keywords `a` and `the` are ignored by the compliler in case they are not the
 You don't need to define variables explicitly. To create a variable and assign a value to the following:
 
 ```
-let divident be 10
+let dividend be 10
 let divisor be 5
 ```
 
@@ -50,8 +50,8 @@ To define and use a block of code use the construce `do the following:` and a bl
 
 ```
 to add x to y do the following:
-	perform x + y and let the outcome be that
-	let the result be outcome
+    perform x + y and let the outcome be that
+    let the result be outcome
 ```
 
 # Exceptions
@@ -60,8 +60,8 @@ To raise an exception use the syntax "unfortunately it is" followed by the name 
 
 ```
 to divide a dividend by a divisor do the following:
-	if the divisor is equal to 0 then unfortunately it is a division_by_zero
-	perform x / y and then let the result be that
+    if the divisor is equal to 0 then unfortunately it is a division_by_zero
+    perform x / y and then let the result be that
 
 ```
 
