@@ -1,4 +1,4 @@
-# Extremely verbose extremely expressive language
+# Expressive language (Eel)
 Created just for fun
 
 # Motivation
@@ -9,7 +9,10 @@ that one would not need any comments or documentation.
 # Syntax
 [Please refer here](/doc/syntax.md)
 
-# TODO
-Create a translator to Python for functions and simple scripting
+# Testing
 
+To run unit tests for the python code change directory to src/main/py and execute
 
+```
+python3 -m unittest discover -s ../../test/py
+```

@@ -1,5 +1,5 @@
 # General
-	
+
 * The language uses identations just like Python.
 * Comments are not supported. If you want to comment something it means your code is not expressive enough and you need to change the code
 * There are no global variables. All the functions should be pure functions
