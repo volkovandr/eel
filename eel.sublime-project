@@ -5,7 +5,7 @@
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 			"name": "Anaconda Python Builder",
 			"selector": "source.python",
-			"shell_cmd": "\"python\" -u \"$file\""
+			"shell_cmd": "\"python3\" -u \"$file\""
 		}
 	],
 	"folders":
@@ -16,10 +16,13 @@
 	],
 	"settings":
 	{
+		"python_interpreter": "python3",
 		"rulers":
 		[
 			80,
 			120
-		]
+		],
+		"test_command": "cd src/main/py && python3 -m unittest discover -s ../../test/py",
+		"trim_trailing_white_space_on_save" : true
 	}
 }
