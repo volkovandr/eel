@@ -11,7 +11,8 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": ".",
+			"folder_exclude_patterns": ["__pycache__"],
 		}
 	],
 	"settings":
@@ -23,6 +24,7 @@
 			120
 		],
 		"test_command": "cd src/main/py && python3 -m unittest discover -s ../../test/py",
-		"trim_trailing_white_space_on_save" : true
+		"trim_trailing_white_space_on_save" : true,
+		"translate_tabs_to_spaces": true
 	}
 }
