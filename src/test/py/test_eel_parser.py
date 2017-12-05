@@ -5,7 +5,8 @@ import eel_parser
 import textwrap
 
 
-class TestEelParser(TestCase):
+class TestToken(TestCase):
+    '''Tests for the class Token'''
 
     def test_token_can_represent_itself(self):
         toc = eel_parser.token("some_file.eel", ["line one", "line two"], 9)
@@ -27,3 +28,11 @@ class TestEelParser(TestCase):
             10: line two
             ''')
         self.assertEqual(str_repr, expected)
+
+
+class TestParser(TestCase):
+    '''Tests for the parser'''
+
+    def test_returns_empty_list_on_no_code(self):
+        tokens = eel_parser.parse_eel_code([], "some_file.eel")
+        self.assertEqual(tokens, [])

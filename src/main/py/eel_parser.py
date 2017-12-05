@@ -29,4 +29,5 @@ class token:
 
 
 def parse_eel_code(lines, filename):
-    pass
+    if len(lines) == 0:
+        return []
