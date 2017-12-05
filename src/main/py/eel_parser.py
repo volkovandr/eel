@@ -7,7 +7,7 @@ Parser of eel code
 import math
 
 
-class token:
+class Token:
 
     def __init__(self, filename, lines, start_from):
         self.filename = filename
