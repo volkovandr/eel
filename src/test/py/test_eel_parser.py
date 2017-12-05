@@ -16,3 +16,14 @@ class TestEelParser(TestCase):
             10: line two
             ''')
         self.assertEqual(str_repr, expected)
+
+    def test_can_add_line_to_token(self):
+        toc = eel_parser.token("some_file.eel", ["line one"], 9)
+        toc.add_line("line two")
+        str_repr = str(toc)
+        expected = textwrap.dedent('''\
+            Code from some_file.eel:
+             9: line one
+            10: line two
+            ''')
+        self.assertEqual(str_repr, expected)

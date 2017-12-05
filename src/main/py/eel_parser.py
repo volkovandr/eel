@@ -14,6 +14,9 @@ class token:
         self.lines = lines
         self.start_from = start_from
 
+    def add_line(self, line):
+        self.lines.append(line)
+
     def __repr__(self):
         line_numbers = list(
             range(self.start_from, self.start_from + len(self.lines)))
