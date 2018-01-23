@@ -1,6 +1,6 @@
 # General
 
-* The language uses identations just like Python.
+* The language uses indentations just like Python.
 * Comments are not supported. If you want to comment something it means your code is not expressive enough and you need to change the code
 * There are no global variables. All the functions should be pure functions
 * [Keywords](keywords.md)
@@ -17,7 +17,7 @@ You don't need to define variables explicitly. To create a variable and assign a
 
 ```
 let the dividend be 10
-let then divisor be 5
+let the divisor be 5
 ```
 
 # Operators
@@ -30,14 +30,13 @@ perform dividend / divisor and let the outcome be that
 
 # Functions
 
-To create a function use the keywords `to` followed by the function name and the parameters separated by `and`, `with`, `for`, `by` etc. and finally followed by `performed` when the function is a oneliner. To return from the function assign any value to the special variable `the result`. 
+To create a function use the keywords `to` followed by the function name and the parameters separated by `and`, `with`, `for`, `by` etc. and finally followed by `perform` and the expression when the function is a oneliner. To return from the function assign any value to the special variable `the result`. 
 
 ```
 to divide dividend by divisor perform dividend / divisor and let the result be that 
 ```
 
-and then to use the function use its name with the parameters. To use the return value in subsequent calls you may use the constract `and then ... that` where `that` refers to the return value. To assign the result of the function to a variable use `and let <vairable> be that`.
-
+and then to use the function use its name with the parameters. To use the return value in subsequent calls you may use the constract `and then ... that` where `that` refers to the return value. To assign the result of the function to a variable use `and let <vairable> be that. For example: 
 ```
 let dividend be 10
 let divisor be 2
@@ -46,12 +45,12 @@ divide dividend by divisor and then print that
 
 # Blocks of code
 
-To define and use a block of code use the construce `do the following:` and a block of code in the following lines that shoule be indented. As follows
+To define and use a block of code use the construct `do the following:` and a block of code in the following lines that shoule be indented. As follows
 
 ```
 to add x to y do the following:
-    perform x + y and let the outcome be that
-    let the result be outcome
+    perform x + y and let the sum be that
+    let the result be sum
 ```
 
 # Exceptions
